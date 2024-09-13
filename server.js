@@ -26,6 +26,7 @@ app.use(express.json());
 // Routes q
 app.use('/api', routes);
 console.log('routes', routes)
+console.log(firstName, lastName)
 
 
 
