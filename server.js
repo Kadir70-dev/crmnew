@@ -23,8 +23,9 @@ connectDB();
 app.use(express.json());
 
 
-// Routes
+// Routes q
 app.use('/api', routes);
+console.log('routes', routes)
 
 
 
