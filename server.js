@@ -27,6 +27,7 @@ app.use(express.json());
 app.use('/api', routes);
 console.log('routes', routes)
 console.log(firstName, lastName)
+console.log(email, password)
 
 
 
