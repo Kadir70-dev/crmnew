@@ -8,6 +8,7 @@ const swaggerSetup = require('./swagger');
 const { compareSync } = require('bcryptjs');
 
 const app = express();
+console.log('app', app)
 
 
 // Load environment variables
