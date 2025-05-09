@@ -70,7 +70,7 @@ const sendReminder = async (req, res) => {
     await sendEmailNotification(email, 'Task Reminder', reminderMessage);
 
     // Send SMS notification
-    console.log('Sending SMS notification...');
+    // console.log('Sending SMS notification...');
     await sendSMSNotification(phoneNumber, reminderMessage);
 
     console.log('All notifications sent successfully.');
