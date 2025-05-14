@@ -15,6 +15,7 @@ const createStudent = async (req, res) => {
 const getStudents = async (req, res) => {
   try {
     const students = await Student.find();
+    console.log('Fetched students:', students);
     res.status(200).json(students);
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -25,6 +26,7 @@ const getStudents = async (req, res) => {
 const getStudentById = async (req, res) => {
   try {
     const student = await Student.findById(req.params.id);
+    console.log('Fetched student:', student);
     if (!student) {
       return res.status(404).json({ error: 'Student not found' });
     }
