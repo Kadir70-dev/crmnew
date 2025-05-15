@@ -40,6 +40,7 @@ function authenticateToken(req, res, next) {
     next();
   } catch (error) {
     res.status(403).json({ message: 'Invalid token' });
+    
   }
 }
 

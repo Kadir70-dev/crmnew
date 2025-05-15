@@ -6,6 +6,7 @@ exports.createDeal = async (req, res) => {
     const deal = new Deal(req.body);
     await deal.save();
     res.status(201).json(deal);
+    
   } catch (error) {
     res.status(400).json({ message: error.message });
   }

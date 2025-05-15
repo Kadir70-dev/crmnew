@@ -22,6 +22,7 @@ const leadSchema = new mongoose.Schema({
     type: String,
     enum: ['New', 'Contacted', 'Qualified', 'Converted', 'Dropped'],
     default: 'New',
+    
   },
   conversionDate: {
     type: Date,

@@ -18,6 +18,7 @@ const calendarEventSchema = new mongoose.Schema({
   },
   location: {
     type: String,
+    
   },
   attendees: [
     {

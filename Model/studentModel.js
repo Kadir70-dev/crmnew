@@ -23,6 +23,7 @@ const studentSchema = new mongoose.Schema({
     type: String,
     enum: ['Interested', 'Enrolled', 'Dropped'],
     default: 'Interested',
+    
   },
   createdAt: {
     type: Date,

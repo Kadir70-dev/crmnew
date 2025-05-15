@@ -6,6 +6,7 @@ exports.createReport = async (req, res) => {
     const report = new Report(req.body);
     await report.save();
     res.status(201).json(report);
+    
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
