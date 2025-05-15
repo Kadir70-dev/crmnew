@@ -24,6 +24,7 @@ const taskSchema = new mongoose.Schema({
     type: String,
     enum: ['Low', 'Medium', 'High'],
     default: 'Medium',
+    
   },
   createdAt: {
     type: Date,

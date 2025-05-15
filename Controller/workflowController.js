@@ -86,6 +86,7 @@ const executeActions = async (actions, data) => {
         break;
       case 'sendSMS':
         await sendSMSNotification(data.phoneNumber, data.message);
+        
         break;
       case 'createTask':
         // Create a new task based on data

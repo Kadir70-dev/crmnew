@@ -23,6 +23,7 @@ exports.registerUser = async (req, res) => {
     console.log(`Database Name: ${user.db.databaseName}`);
     console.log(`Collection Name: ${user.collection.collectionName}`);
     
+    
     res.status(201).json({
       _id: user._id,
       name: user.name,

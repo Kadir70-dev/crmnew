@@ -71,6 +71,7 @@ const sendReminder = async (req, res) => {
 
     // Send SMS notification
     // console.log('Sending SMS notification...');
+    
     await sendSMSNotification(phoneNumber, reminderMessage);
 
     console.log('All notifications sent successfully.');

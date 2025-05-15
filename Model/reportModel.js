@@ -23,6 +23,7 @@ const reportSchema = new mongoose.Schema({
     type: Map,
     of: String,
     description: 'Filters applied to generate the report',
+    
   },
   createdBy: {
     type: String,  // Can be a user ID or email

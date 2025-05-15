@@ -20,6 +20,7 @@ const dealSchema = new mongoose.Schema({
     type: String,
     enum: ['Lead', 'Negotiation', 'Contract', 'Closed-Won', 'Closed-Lost'],
     default: 'Lead',
+    
   },
   expectedCloseDate: {
     type: Date,
