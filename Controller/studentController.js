@@ -28,7 +28,7 @@ const getStudents = async (req, res) => {
 const getStudentById = async (req, res) => {
   try {
     const student = await Student.findById(req.params.id);
-    console.log('Fetched student:', student);
+    console.log('Fetched students:', student);
     if (!student) {
       return res.status(404).json({ error: 'Student not found' });
     }
@@ -44,6 +44,7 @@ const updateStudent = async (req, res) => {
     const student = await Student.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
     });
+    console.log('Fetched students:', student);
     if (!student) {
       return res.status(404).json({ error: 'Student not found' });
     }
