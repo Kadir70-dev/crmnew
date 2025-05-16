@@ -5,6 +5,7 @@ exports.createReport = async (req, res) => {
   try {
     const report = new Report(req.body);
     await report.save();
+    console.log('Report created:', report);
     res.status(201).json(report);
     
   } catch (error) {
@@ -16,6 +17,7 @@ exports.createReport = async (req, res) => {
 exports.getReports = async (req, res) => {
   try {
     const reports = await Report.find();
+    console.log('Reports retrieved:', reports);
     res.status(200).json(reports);
   } catch (error) {
     res.status(500).json({ message: error.message });

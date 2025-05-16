@@ -9,7 +9,7 @@ const generateToken = (id, role) => {
 // Register User
 exports.registerUser = async (req, res) => {
   const { name, email, password, role } = req.body;
-  console.log(`Registering user with email: ${email}`);
+  console.log(`Registering user with emails: ${email}`);
   try {
     const userExists = await User.findOne({ email });
     if (userExists) {
